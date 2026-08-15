@@ -1,16 +1,29 @@
-# React + Vite
+# CraveCrust — Gourmet Woodfire Artisan & Store Telemetry Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+CraveCrust is a full-stack artisan pizza e-commerce platform and store telemetry system featuring an interactive 2D Woodfire Builder, real-time stock deduction, Razorpay online payments, 6-digit email OTP verification, role-based staff administration, and automated low-stock background monitoring.
 
-Currently, two official plugins are available:
+Completed as part of the Oasis Infobyte Student Internship Program (OIBSIP).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- **Frontend**: React 18, Vite, Tailwind CSS, Framer Motion, Lucide Icons, Axios
+- **Backend**: Node.js, Express.js, MongoDB Atlas, Mongoose, JWT, bcryptjs
+- **Integrations**: Razorpay API, Nodemailer SMTP, Node-Cron Scheduler
 
-## React Compiler
+## Project Structure
+- `src/` — React frontend SPA application
+- `server/` — Express backend REST API & Mongoose models
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Local Setup
 
-## Expanding the Oxlint configuration
+```bash
+# 1. Install & start backend (Port 5000)
+cd server
+npm install
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+# 2. Install & start frontend (Port 5173)
+# (From repository root in a separate terminal)
+npm install
+npm run dev
+```
+
